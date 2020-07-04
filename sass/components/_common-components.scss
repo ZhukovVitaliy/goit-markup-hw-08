@@ -1,0 +1,120 @@
+body {
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.container-border {
+  border-top: 1px solid #ececec;
+}
+
+.overlay {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero/hero_img.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* main */
+
+.main {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.box-title {
+  margin-bottom: 50px;
+}
+.section-title {
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.bg-team {
+  background-color: $primary-bg-color;
+}
+.section-p {
+  margin-top: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.title {
+  margin: 0;
+
+  color: $title-text-color;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $title-text-color;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $primary-text-color;
+}

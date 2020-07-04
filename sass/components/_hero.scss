@@ -1,0 +1,39 @@
+.hero {
+  text-align: center;
+
+  padding-top: 200px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.hero-box {
+  margin-top: o;
+  margin-bottom: 46px;
+}
+.hero-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  color: $white-color;
+}
+
+/* overlay */
+
+.overlay {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato; */
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero/hero_img.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
