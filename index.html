@@ -18,51 +18,63 @@
   <body>
     <!--Шапка сайта-->
     <header>
-      <div class="container main-nav">
+      <div class="main-nav">
         <a href="./index.html" class="logo">
-          Web <span class="logo-secondary-color">Studio</span></a
-        >
-        <nav>
-          <ul class="site-nav">
-            <li class="item"><a href="" class="link current">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+          Web <span class="logo-secondary-color">Studio</span>
+        </a>
+        <button type="button" 
+        class="menu-button" 
+        aria-expanded="false" 
+        aria-controls="menu-container" 
+        data-menu-button>
+          <svg width="40" height="40" 
+          aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav>
+            <ul class="site-nav">
+              <li class="item"><a href="" class="link current">Студия</a></li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header-contacts">
+            <li class="header-link">
+              <a class="header-contacts-link" href="mailto:info@devstudio.com">
+                <svg class="header-link-icon">
+                  <use href="./images/symbol-defs.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="header-link">
+              <a class="header-contacts-link" href="tel:380961111111">
+                <svg class="header-link-icon">
+                  <use href="./images/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li class="header-link">
-            <a class="header-contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header-link-icon">
-                <use href="./images/symbol-defs.svg#mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-link">
-            <a class="header-contacts-link" href="tel:380961111111">
-              <svg class="header-link-icon">
-                <use href="./images/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!--Герой-->
       <section class="hero overlay">
-        <div class="hero-box">
+          <div class="hero-box">
           <h1 class="hero-title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-        </div>
         <button type="button" class="button hero-button" data-modal-open>
           Заказать услугу
-        </button>
+        </button></div>
       </section>
 
       <!--деятельность-->
@@ -123,7 +135,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="section">
+      <section class="section none">
         <div class="container main container-border">
           <div class="box-title">
             <h2 class="section-title">Чем мы занимаемся</h2>
@@ -131,7 +143,12 @@
           <ul class="doing">
             <li>
               <a href="" class="img-doing">
-                <img src="./images/box/box_1.jpg" alt="ноутбук" width="370" />
+                <img srcset="
+                          ./images/box/box_1.jpg 1x,
+                          ./images/box/box_1@2x.jpg 2x,
+                        " src="./images/box/box_1.jpg" 
+                        alt="ноутбук" 
+                        width="370" />
                 <div class="doing-overlay">
                   <p class="doing-text">Десктопные приложения</p>
                 </div>
@@ -139,7 +156,10 @@
             </li>
             <li>
               <a href="" class="img-doing">
-                <img src="./images/box/box_2.jpg" alt="смартфон" width="370" />
+                <img srcset="
+                                          ./images/box/box_2.jpg 1x,
+                                          ./images/box/box_2@2x.jpg 2x,
+                                        " src="./images/box/box_1.jpg" alt="ноутбук" width="370" />
                 <div class="doing-overlay">
                   <p class="doing-text">Мобильные приложения</p>
                 </div>
@@ -147,11 +167,10 @@
             </li>
             <li>
               <a href="" class="img-doing">
-                <img
-                  src="./images/box/box_3.jpg"
-                  alt="дизайн сайта"
-                  width="370"
-                />
+                <img srcset="
+                                          ./images/box/box_3.jpg 1x,
+                                          ./images/box/box_3@2x.jpg 2x,
+                                        " src="./images/box/box_1.jpg" alt="ноутбук" width="370" />
                 <div class="doing-overlay">
                   <p class="doing-text">Дизайнерские решения</p>
                 </div>
@@ -167,12 +186,11 @@
           <h2 class="section-title team-title">Наша команда</h2>
           <ul class="team">
             <li class="team-list">
-              <img
-                class="img-team"
-                src="./images/our_team/John_Smith.jpg"
-                alt="на фото John Smith"
-                width="270"
-              />
+              <img class="img-team"
+              srcset="
+               ./images/our_team/John_Smith.jpg 1x,
+               ./images/our_team/John_Smith@2x.jpg 2x,
+               " src="/images/our_team/John_Smith.jpg" alt="на фото John Smith" width="270" />
               <h3>Николай Кучеренко</h3>
               <p>Product Designer</p>
               <ul class="box_social_links">
@@ -199,12 +217,10 @@
               </ul>
             </li>
             <li class="team-list">
-              <img
-                class="img-team"
-                src="./images/our_team/Marta_Stewart.jpg"
-                alt="на фото Marta Stewart"
-                width="270"
-              />
+              <img class="img-team" srcset="
+                             ./images/our_team/Marta_Stewart.jpg 1x,
+                             ./images/our_team/Marta_Stewart@2x.jpg 2x,
+                             " src="/images/our_team/Marta_Stewart.jpg" alt="на фото John Smith" width="270" />
               <h3>Ольга Иванова</h3>
               <p>Frontend Developer</p>
               <ul class="box_social_links">
@@ -231,12 +247,10 @@
               </ul>
             </li>
             <li class="team-list">
-              <img
-                class="img-team"
-                src="./images/our_team/Robert_Jakis.jpg"
-                alt="на фото Robert Jakis"
-                width="270"
-              />
+              <img class="img-team" srcset="
+                             ./images/our_team/Robert_Jakis.jpg 1x,
+                             ./images/our_team/Robert_Jakis@2x.jpg 2x,
+                             " src="/images/our_team/Robert_Jakis.jpg" alt="на фото John Smith" width="270" />
               <h3>Андрей Шевченко</h3>
               <p>Marketing</p>
               <ul class="box_social_links">
@@ -263,12 +277,10 @@
               </ul>
             </li>
             <li class="team-list">
-              <img
-                class="img-team"
-                src="./images/our_team/Martin_Doe.jpg"
-                alt="на фото Martin Doe"
-                width="270"
-              />
+              <img class="img-team" srcset="
+                ./images/our_team/Martin_Doe.jpg 1x,
+                ./images/our_team/Martin_Doe@2x.jpg 2x,
+                " src="/images/our_team/Martin_Doe.jpg" alt="на фото John Smith" width="270" />
               <h3>Иван Николаев</h3>
               <p>UI Designer</p>
               <ul class="box_social_links">
@@ -303,47 +315,47 @@
         <div class="container main">
           <h2 class="section-title team-title">Постоянные клиенты</h2>
           <ul class="clientes">
-            <li>
-              <button type="button" class="button clientes-button">
+            <li class="clientes-list">
+              <a href="/" class="clientes-project">
                 <svg class="clientes-logo">
                   <use href="./images/symbol-defs.svg#logo_1"></use>
                 </svg>
-              </button>
+              </a>
             </li>
-            <li>
-              <button type="button" class="button clientes-button">
+            <li class="clientes-list">
+              <a href="/" class="clientes-project">
                 <svg class="clientes-logo">
                   <use href="./images/symbol-defs.svg#logo_2"></use>
                 </svg>
-              </button>
+              </a>
             </li>
-            <li>
-              <button type="button" class="button clientes-button">
+            <li class="clientes-list">
+              <a href="/" class="clientes-project">
                 <svg class="clientes-logo">
                   <use href="./images/symbol-defs.svg#logo_3"></use>
                 </svg>
-              </button>
+              </a>
             </li>
-            <li>
-              <button type="button" class="button clientes-button">
+            <li class="clientes-list">
+              <a href="/" class="clientes-project">
                 <svg class="clientes-logo">
                   <use href="./images/symbol-defs.svg#logo_4"></use>
                 </svg>
-              </button>
+              </a>
             </li>
-            <li>
-              <button type="button" class="button clientes-button">
+            <li class="clientes-list">
+              <a href="/" class="clientes-project">
                 <svg class="clientes-logo">
                   <use href="./images/symbol-defs.svg#logo_5"></use>
                 </svg>
-              </button>
+              </a>
             </li>
-            <li>
-              <button type="button" class="button clientes-button">
+            <li class="clientes-list">
+              <a href="/" class="clientes-project">
                 <svg class="clientes-logo">
                   <use href="./images/symbol-defs.svg#logo_6"></use>
                 </svg>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -373,10 +385,10 @@
             </ul>
           </div>
 
-          <div>
+          <div class="join">
             <b class="footer-headline">ПРИСОЕДИНЯЙТЕСЬ</b>
             <div>
-              <ul class="box_social_links footer-social-links1">
+              <ul class="box_social_links footer-social-links">
                 <li class="list_social_links footer-bg-links">
                   <svg class="social_links">
                     <use href="./images/symbol-defs.svg#instagram"></use>
@@ -400,6 +412,7 @@
               </ul>
             </div>
           </div>
+          
           <div>
             <b class="footer-headline">ПОДПИСАТСЯ НА РАССЫЛКУ</b>
             <form class="footer-form">
@@ -493,6 +506,8 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+    <!-- скрипт мобильного меню -->
+    <script src="./js/menu.js"></script>
     <!-- скрипт для модально окна -->
     <script src="./js/modal.js"></script>
   </body>

@@ -1,0 +1,34 @@
+.doing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-doing {
+  position: relative;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.doing-overlay {
+  position: absolute;
+  width: 100%;
+
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.doing-text {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 21px 60px;
+
+  color: $white-color;
+}

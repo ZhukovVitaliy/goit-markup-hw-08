@@ -1,0 +1,101 @@
+body {
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $title-text-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $primary-text-color;
+}
+
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-border {
+  border-top: 1px solid #ececec;
+}
+.box-title {
+  margin-bottom: 50px;
+}
+.section-title {
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.bg-team {
+  background-color: $primary-bg-color;
+}
+.section-p {
+  margin-top: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.title {
+  margin: 0;
+
+  color: $title-text-color;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 2;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  letter-spacing: 0.06em;
+}
+
+.container-border {
+  border-top: 1px solid #ececec;
+}

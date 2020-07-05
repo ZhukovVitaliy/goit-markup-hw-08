@@ -1,0 +1,11 @@
+.clientes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clientes-logo {
+  width: 90px;
+  height: 55px;
+
+  fill: $social-network-color;
+}

@@ -1,6 +1,53 @@
 .clientes {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 450px) {
+  }
+
+  margin: -15px;
+}
+
+.clientes-list {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
+}
+
+.clientes-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // min-width: 210px;
+  height: 90px;
+
+  border-radius: 4px;
+
+  background-color: $white-color;
+  border: 1px solid $social-network-color;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    --color1: #2196f3;
+
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .clientes-logo {
